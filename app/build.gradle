@@ -32,9 +32,5 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-
-    // XposedBridge API — compile only, tidak ikut di APK
-    // VirtualXposed sudah include ini di runtime-nya
-    compileOnly 'de.robv.android.xposed:api:82'
-    compileOnly 'de.robv.android.xposed:api:82:sources'
+    compileOnly files('libs/XposedBridge.jar')
 }
